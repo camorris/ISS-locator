@@ -13,11 +13,13 @@ class App extends Component {
       <div className="App">
 
         <div className="navigation">
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/contact">Contact</Link>
-            <Link to="/location">ISS Location</Link>
-          </div>
+          <ul>
+            <li> <Link to="/">Home</Link> </li>
+            <li> <Link to="/about">Purpose</Link> </li>
+            <li> <Link to="/contact">Contact</Link></li>
+            <li><Link to="/location">ISS Location</Link></li>
+          </ul>
+        </div>
 
         <Route exact path='/' component={Home}/>
         <Route path='/about' component={About}/>

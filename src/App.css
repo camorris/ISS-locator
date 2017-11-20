@@ -22,7 +22,16 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+
+.navigation {
+  border: 5px solid black;
+  border-width: 50%;
+}
+
+li{
+list-style-type: none;
+display: inline-block;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+padding: 20px;
+font-size: 30px;
 }
