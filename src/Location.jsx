@@ -1,5 +1,4 @@
 import React from 'react'
-import Loading from './Loading'
 import axios from 'axios'
 
 class CurrentLocation extends React.Component {
@@ -35,7 +34,7 @@ class CurrentLocation extends React.Component {
         return (
             <div className="CurrentLocation">
                 <h1>Current Location</h1>
-               {this.state.loading ? <Loading />: null}
+               
                 {this.state.currentLocation
                 ? `${this.state.currentLocation.iss_position.latitude}, ${this.state.currentLocation.iss_position.longitude}`
                 : null
