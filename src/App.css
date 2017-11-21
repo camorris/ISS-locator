@@ -46,3 +46,7 @@ font-size: 30px;
   text-decoration: none;
   color:rgb(48, 48, 125) !important;
 }
+
+.changeSatPosition{
+  border: 5px solid red !important;
+}

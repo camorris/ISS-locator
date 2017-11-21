@@ -3,10 +3,14 @@ import axios from 'axios'
 
 class CurrentLocation extends React.Component {
     state = {
-        loading: true,
-        currentLocation: null
+        currentLocation: null,
+        satPosition: false
     }
 
+    moveSat(){
+        this.setState({satPosition: !this.state.satPosition})
+        
+    }
     componentDidMount() {
         this.getLocation()
         this.interval = setInterval(() => {
@@ -30,17 +34,19 @@ class CurrentLocation extends React.Component {
         }}))
     }
 
+    
+    
     render() {
         return (
             <div className="CurrentLocation">
                 <h1>Current Location</h1>
-
-                {this.state.currentLocation
+                <h1>{this.state.currentLocation
                 ? `${this.state.currentLocation.iss_position.latitude}, ${this.state.currentLocation.iss_position.longitude}`
                 : null
-                }
-                <img src="http://www.washingtonpost.com/wp-srv/special/national/nasa-iss/img/ISS-2011.png" alt="international space station" height="500px" width="500px"/>
-
+                }</h1>
+                
+                    <img  onClick={this.moveSat.bind(this)} className= {`${this.state.satPosition ? 'changeSatPosition' : '' }`}src="http://www.washingtonpost.com/wp-srv/special/national/nasa-iss/img/ISS-2011.png" alt="international space station" height="500px" width="500px"/>
+                
             </div>
         )
     }
