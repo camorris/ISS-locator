@@ -34,12 +34,12 @@ class CurrentLocation extends React.Component {
         return (
             <div className="CurrentLocation">
                 <h1>Current Location</h1>
-                <img src="http://www.nasa.gov/sites/default/files/thumbnails/image/ocs_iss_0.jpg" alt="international space station" height="500px" width="500px"/>
 
                 {this.state.currentLocation
                 ? `${this.state.currentLocation.iss_position.latitude}, ${this.state.currentLocation.iss_position.longitude}`
                 : null
                 }
+                <img src="http://www.washingtonpost.com/wp-srv/special/national/nasa-iss/img/ISS-2011.png" alt="international space station" height="500px" width="500px"/>
 
             </div>
         )

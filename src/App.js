@@ -14,9 +14,9 @@ class App extends Component {
 
         <div className="navigation">
           <ul>
-            <li> <Link to="/">ISS Location</Link> </li>
-            <li> <Link to="/about">Purpose</Link> </li>
-            <li> <Link to="/contact">Contact</Link></li>
+            <li> <Link to="/" className="navlinks">ISS Location</Link> </li>
+            <li> <Link to="/about" className="navlinks" >Purpose</Link> </li>
+            <li> <Link to="/contact" className="navlinks">Contact</Link></li>
           </ul>
         </div>
 
