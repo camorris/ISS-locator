@@ -39,7 +39,8 @@ font-size: 30px;
 
 .navlinks{
   text-decoration: none;
-  color: midnightblue !important;
+  color: white !important;
+  font-size: 30px;
 }
 
 .navlinks:hover{
@@ -49,4 +50,23 @@ font-size: 30px;
 
 .changeSatPosition{
   border: 5px solid red !important;
+}
+
+body{
+  background-image: url('nightsky.jpg') !important;
+  color: white;
+}
+
+.About{
+  border: 5px dotted white;
+  text-align: center;
+  display: inline-block;
+ width: 85% !important;
+ box-shadow:         5px 5px 7px 8px  black;
+}
+
+p{
+  font-family: Courier;
+  font-size:20px;
+  text-shadow:3px 3px 5px 6px #ccc;
 }
