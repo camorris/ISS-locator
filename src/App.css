@@ -70,3 +70,19 @@ p{
   font-size:20px;
   text-shadow:3px 3px 5px 6px #ccc;
 }
+
+.link{
+ color: red;
+ font-size: 24px;
+}
+
+input {
+  display: block;
+  width: 200px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 10%;
+  border: 1px solid white;
+}
+  

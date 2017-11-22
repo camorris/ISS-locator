@@ -7,10 +7,7 @@ class CurrentLocation extends React.Component {
         satPosition: false
     }
 
-    moveSat(){
-        this.setState({satPosition: !this.state.satPosition})
-        
-    }
+
     componentDidMount() {
         this.getLocation()
         this.interval = setInterval(() => {
@@ -45,7 +42,7 @@ class CurrentLocation extends React.Component {
                 : null
                 }</h1>
                 
-                    <img  onClick={this.moveSat.bind(this)} className= {`${this.state.satPosition ? 'changeSatPosition' : '' }`}src="http://www.washingtonpost.com/wp-srv/special/national/nasa-iss/img/ISS-2011.png" alt="international space station" height="500px" width="500px"/>
+                    <img   className='satImage' src="http://www.washingtonpost.com/wp-srv/special/national/nasa-iss/img/ISS-2011.png" alt="international space station" height="500px" width="500px"/>
                 
             </div>
         )
